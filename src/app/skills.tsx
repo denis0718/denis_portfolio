@@ -54,16 +54,15 @@ export function Skills() {
   return (
     <section className="px-8">
       <div className="container mx-auto mb-20 text-center">
-        <Typography color="blue-gray" className="mb-2 font-bold uppercase">
+        <Typography color="blue-gray" className="mb-2 font-bold uppercase" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           my skills
         </Typography>
-        <Typography variant="h1" color="blue-gray" className="mb-4">
+        <Typography variant="h1" color="blue-gray" className="mb-4" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           What I do
         </Typography>
         <Typography
           variant="lead"
-          className="mx-auto w-full !text-gray-500 lg:w-10/12"
-        >
+          className="mx-auto w-full !text-gray-500 lg:w-10/12" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}        >
           With a passion for blockchain technology and a specialization in Ton chain and Telegram Miniapp development, I bring several years of experience to the forefront of decentralized application (dApp) creation. Known for delivering innovative solutions that harness the power of Ton blockchain and enhance user experiences on Telegram Miniapps, I have successfully contributed to numerous projects across various projects.
         </Typography>
       </div>

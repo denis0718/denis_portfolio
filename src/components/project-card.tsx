@@ -16,14 +16,14 @@ interface ProjectCardProps {
   img: string;
   title: string;
   desc: string;
-  githubURL: String;
-  projectURL: String;
+  githubURL: string;
+  projectURL: string;
 }
 
 export function ProjectCard({ img, title, desc, githubURL, projectURL }: ProjectCardProps) {
   return (
-    <Card color="transparent" shadow={false}>
-      <CardHeader floated={false} className="mx-0 mt-0 mb-6 h-48">
+    <Card color="transparent" shadow={false} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
+      <CardHeader floated={false} className="mx-0 mt-0 mb-6 h-48" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
         <Image
           src={img}
           alt={title}
@@ -32,16 +32,16 @@ export function ProjectCard({ img, title, desc, githubURL, projectURL }: Project
           className="h-full w-full object-cover"
         />
       </CardHeader>
-      <CardBody className="p-0">
+      <CardBody className="p-0"  placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
         <a
           href="#"
           className="text-blue-gray-900 transition-colors hover:text-gray-800"
         >
-          <Typography variant="h5" className="mb-2">
+          <h5 className="mb-2">
             {title}
-          </Typography>
+          </h5>
         </a>
-        <Typography className="mb-6 font-normal !text-gray-500">
+        <Typography className="mb-6 font-normal !text-gray-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           {desc}
         </Typography>
         <Row classNames="w-full items-center justify-center mt-4 gap-2">

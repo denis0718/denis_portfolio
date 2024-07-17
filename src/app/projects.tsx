@@ -9,6 +9,7 @@ const PROJECTS = [
     title: "TMA Development",
     desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
     githubURL: 'https://github.com/denis0718/Telegram-MiniApp',
+    projectURL: ''
   },
   {
     img: "/image/restaurant.jpg",
@@ -22,6 +23,7 @@ const PROJECTS = [
     title: "TON Smart Contract Development",
     desc: "Develop smart contract to enable support a wide variety of dApp",
     githubURL: 'https://github.com/denis0718/TON_SmartContract',
+    projectURL: ''
   },
   {
     img: "/image/blog4.svg",
@@ -36,9 +38,9 @@ export function Projects() {
   return (
     <section className="py-28 px-8">
       <div className="container mx-auto mb-20 text-center">
-        <Typography variant="h2" color="blue-gray" className="mb-4">
+        <h2 color="blue-gray" className="mb-4">
           My Projects
-        </Typography>
+        </h2>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-4">
         {PROJECTS.map((props, idx) => (
