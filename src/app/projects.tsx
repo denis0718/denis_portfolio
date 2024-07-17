@@ -21,7 +21,7 @@ const PROJECTS = [
   {
     img: "/image/ton.jpg",
     title: "TON Smart Contract Development",
-    desc: "Develop smart contract to enable support a wide variety of dApp",
+    desc: "Develop smart contract to process fast transaction and enable support a wide variety of dApp",
     githubURL: 'https://github.com/denis0718/TON_SmartContract',
     projectURL: ''
   },

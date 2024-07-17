@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
-import Row from './row.tsx'
 import {
   Card,
   CardHeader,
@@ -44,7 +43,9 @@ export function ProjectCard({ img, title, desc, githubURL, projectURL }: Project
         <Typography className="mb-6 font-normal !text-gray-500" placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
           {desc}
         </Typography>
-        <Row classNames="w-full items-center justify-center mt-4 gap-2">
+        <div
+          className={`relative flex flex-row justify-start items-start transition duration-300 ease-in-out w-full items-center justify-center mt-4 gap-2`}
+        >
           {githubURL ? (
             <Link
               href={githubURL}
@@ -72,7 +73,7 @@ export function ProjectCard({ img, title, desc, githubURL, projectURL }: Project
               />
             </Link>
           ) : null}
-        </Row>
+        </div>
       </CardBody>
     </Card>
   );
