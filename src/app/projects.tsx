@@ -26,11 +26,11 @@ const PROJECTS = [
     projectURL: ''
   },
   {
-    img: "/image/blog4.svg",
+    img: "/image/frontend.jpg",
     title: "Front End Development",
     desc: "Ecommerce website offering  access to the latest and greatest gadgets and accessories.",
     githubURL: 'https://github.com/denis0718/Vue_Comp',
-    projectURL: ''
+    projectURL: 'https://www.socialfoodies.dk/'
   },
 ];
 
