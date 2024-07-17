@@ -9,7 +9,7 @@ const PROJECTS = [
     title: "TMA Development",
     desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
     githubURL: 'https://github.com/denis0718/Telegram-MiniApp',
-    projectURL: ''
+    projectURL: 'https://t.me/theHoldCoinBot'
   },
   {
     img: "/image/restaurant.jpg",
