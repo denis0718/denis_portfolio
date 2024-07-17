@@ -5,44 +5,30 @@ import { Typography } from "@material-tailwind/react";
 
 const PROJECTS = [
   {
-    img: "/image/blog-1.svg",
-    title: "Mobile App Development",
+    img: "/image/tma.png",
+    title: "TMA Development",
     desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
+    githubURL: 'https://github.com/denis0718/Telegram-MiniApp',
   },
   {
-    img: "/image/blog2.svg",
-    title: "Landing Page Development",
-    desc: "Promotional landing page for a  fitness website Summer Campaign. Form development included.",
+    img: "/image/restaurant.jpg",
+    title: "Full Stack Web Development",
+    desc: "Promotional landing page for a restaurant website from scratch based on Figma design.",
+    githubURL: 'https://github.com/denis0718/Erin-Restaurant',
+    projectURL: 'https://dimt.co.uk/'
   },
   {
-    img: "/image/blog3.svg",
-    title: "Mobile App Development",
-    desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
+    img: "/image/ton.jpg",
+    title: "TON Smart Contract Development",
+    desc: "Develop smart contract to enable support a wide variety of dApp",
+    githubURL: 'https://github.com/denis0718/TON_SmartContract',
   },
   {
     img: "/image/blog4.svg",
-    title: "E-commerce development",
+    title: "Front End Development",
     desc: "Ecommerce website offering  access to the latest and greatest gadgets and accessories.",
-  },
-  {
-    img: "/image/blog-1.svg",
-    title: "Mobile App Development",
-    desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
-  },
-  {
-    img: "/image/blog2.svg",
-    title: "Landing Page Development",
-    desc: "Promotional landing page for a  fitness website Summer Campaign. Form development included.",
-  },
-  {
-    img: "/image/blog3.svg",
-    title: "Mobile App Development",
-    desc: "Mobile app designed to help users discover and explore local restaurants and cuisines.",
-  },
-  {
-    img: "/image/blog4.svg",
-    title: "E-commerce development",
-    desc: "Ecommerce website offering  access to the latest and greatest gadgets and accessories.",
+    githubURL: 'https://github.com/denis0718/Vue_Comp',
+    projectURL: ''
   },
 ];
 
@@ -52,14 +38,6 @@ export function Projects() {
       <div className="container mx-auto mb-20 text-center">
         <Typography variant="h2" color="blue-gray" className="mb-4">
           My Projects
-        </Typography>
-        <Typography
-          variant="lead"
-          className="mx-auto w-full px-4 font-normal !text-gray-500 lg:w-6/12"
-        >
-          Whether you have a mobile app idea that needs to come to life or a
-          website that requires a facelift, I&apos;m here to turn your digital
-          dreams into reality.
         </Typography>
       </div>
       <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-4">

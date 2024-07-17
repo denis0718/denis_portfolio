@@ -1,4 +1,9 @@
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
+import Row from './row.tsx'
 import {
   Card,
   CardHeader,
@@ -11,9 +16,11 @@ interface ProjectCardProps {
   img: string;
   title: string;
   desc: string;
+  githubURL: String;
+  projectURL: String;
 }
 
-export function ProjectCard({ img, title, desc }: ProjectCardProps) {
+export function ProjectCard({ img, title, desc, githubURL, projectURL }: ProjectCardProps) {
   return (
     <Card color="transparent" shadow={false}>
       <CardHeader floated={false} className="mx-0 mt-0 mb-6 h-48">
@@ -37,9 +44,35 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
         <Typography className="mb-6 font-normal !text-gray-500">
           {desc}
         </Typography>
-        <Button color="gray" size="sm">
-          see details
-        </Button>
+        <Row classNames="w-full items-center justify-center mt-4 gap-2">
+          {githubURL ? (
+            <Link
+              href={githubURL}
+              aria-label={`${title} GitHub URL`}
+              target="_blank"
+              className="app__outlined_btn !rounded-full !p-2 lg:!p-3 !aspect-square !border-[var(--textColor)]"
+            >
+              <FontAwesomeIcon
+                icon={faGithub}
+                className="text-base/6 text-[var(--textColor)]"
+              />
+            </Link>
+          ) : null}
+
+          {projectURL ? (
+            <Link
+              href={projectURL}
+              aria-label={`${title} Project URL`}
+              target="_blank"
+              className="app__outlined_btn !rounded-full !p-2 lg:!p-3 !aspect-square !border-[var(--textColor)]"
+            >
+              <FontAwesomeIcon
+                icon={faEye}
+                className="text-base/6 text-[var(--textColor)]"
+              />
+            </Link>
+          ) : null}
+        </Row>
       </CardBody>
     </Card>
   );
