@@ -19,6 +19,13 @@ const PROJECTS = [
     projectURL: 'https://dimt.co.uk/'
   },
   {
+    img: "/image/react-native.jpg",
+    title: "React-Native",
+    desc: "A React Native guess-the-word mountain game",
+    githubURL: 'https://github.com/denis0718/ReactNativeWordScramble.git',
+    projectURL: ''
+  },
+  {
     img: "/image/ton.jpg",
     title: "TON Smart Contract Development",
     desc: "Develop smart contract to process fast transaction and enable support a wide variety of dApp",
@@ -42,7 +49,7 @@ export function Projects() {
           my skills
         </Typography>
       </div>
-      <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-4">
+      <div className="container mx-auto grid grid-cols-1 gap-x-10 gap-y-20 md:grid-cols-2 xl:grid-cols-5">
         {PROJECTS.map((props, idx) => (
           <ProjectCard key={idx} {...props} />
         ))}
