@@ -16,7 +16,7 @@ function Hero() {
           <h5
             className="mb-4 !text-gray-500 md:pr-16 xl:pr-28"
           >
-            I&apos;m Denis Prosvietov, a passionate web developer based in Ukraine. Here,
+            I&apos;m Myroslav Volkov, a passionate web developer based in Ukraine. Here,
             you&apos;ll get a glimpse of my journey in the world of web
             development, where creativity meets functionality.
           </h5>
